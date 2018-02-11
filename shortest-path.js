@@ -42,9 +42,9 @@ let initPyramid = (y, x) => {
     else currentY += 1;
 
     initPyramid(currentY, currentX);
-}
+};
 
-function setCalcResults () {
+let setCalcResults = () => {
     let lastLine = pyramid.pop();
     let aboveLine = pyramid.pop();
 
@@ -64,4 +64,4 @@ function setCalcResults () {
         }
     }
     pyramid.push(aboveLine);
-}
+};
